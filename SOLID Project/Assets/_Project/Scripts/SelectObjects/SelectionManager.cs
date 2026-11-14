@@ -30,4 +30,9 @@ public class SelectionManager : MonoBehaviour
         if (_currentSelection != null)
             _selectionResponse.OnSelect(_currentSelection);
     }
+
+    private bool IsNewSelection(Transform selection)
+    {
+        return _currentSelection != selection;
+    }
 }
